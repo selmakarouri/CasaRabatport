@@ -79,7 +79,7 @@ if (window.location.href.startsWith(vtvUrlPrefix)) {
                 if (isVisibleVisa) {
                     console.log("VisaType " + i + " is visible");
                     var VisaType = $("#VisaType" + i).data("kendoDropDownList");
-                    VisaType.select(2); // 2 corresponds to 'Long Stay Visa'
+                    VisaType.select(2); //  corresponds to 'Long Stay Visa'
                     VisaType.trigger("change");
 
                     await new Promise(resolve => {
@@ -110,7 +110,7 @@ if (window.location.href.startsWith(vtvUrlPrefix)) {
                 if (isVisibleSubVisa && isOkButtonClicked) {
                     console.log("VisaSubType " + i + " is visible");
                     var VisaSubType = $("#VisaSubType" + i).data("kendoDropDownList");
-                    VisaSubType.select(8); // 8 corresponds to 'Work'
+                    VisaSubType.select(3); // 3 corresponds to 'Tourism'
                     VisaSubType.trigger("change");
 
                     await new Promise(resolve => setTimeout(resolve, 100)); // Ajouter un délai de 100 ms
@@ -228,7 +228,7 @@ const RabatWPremiumButton = createButton("Rabat Work Premium", function() {
                 if (isVisibleLocation) {
                     console.log("Location " + i + " is visible");
                     var Location = $("#Location" + i).data("kendoDropDownList");
-                    Location.select(1); // 1 corresponds to 'Rabat'
+                    Location.select(1); // 2 corresponds to 'Rabat'
                     Location.trigger("change");
 
                     await new Promise(resolve => setTimeout(resolve, 100)); // Ajouter un délai de 100 ms
@@ -252,7 +252,7 @@ const RabatWPremiumButton = createButton("Rabat Work Premium", function() {
                 if (isVisibleVisa) {
                     console.log("VisaType " + i + " is visible");
                     var VisaType = $("#VisaType" + i).data("kendoDropDownList");
-                    VisaType.select(2); // 2 corresponds to 'Long Stay Visa'
+                    VisaType.select(1); // 1 corresponds to 'Long Stay Visa'
                     VisaType.trigger("change");
 
                     await new Promise(resolve => {
@@ -366,7 +366,7 @@ const RabatWPremiumButton = createButton("Rabat Work Premium", function() {
     //-------------------//
 
 })();
-    console.log("تم تنفيذ الشيفرة لزر Rabat Tourism Premium بنجاح!");
+    console.log("تم تنفيذ الشيفرة لزر Rabat Work Premium بنجاح!");
   });
     
   const CasaWNormalButton = createButton("Casa Work Normal", function() {
@@ -1054,14 +1054,7 @@ const RabatWPremiumButton = createButton("Rabat Work Premium", function() {
             }
         }, 100);
     }, 120);
-// Wait for the modal to be fully shown
-$(document).ready(function() {
-    // Function to handle the modal shown event
-    $('#commonModal').on('shown.bs.modal', function () {
-        // Find the Ok button and trigger a click event
-        $('#commonModal .btn-primary').click();
-    });
-});
+
 })();
 
     //-------------------//
@@ -1183,7 +1176,14 @@ function createButton(label, clickHandler) {
     }, 120); // تأخير لمدة 3 ثواني
   }
 })();
-
+// Wait for the modal to be fully shown
+$(document).ready(function() {
+    // Function to handle the modal shown event
+    $('#commonModal').on('shown.bs.modal', function () {
+        // Find the Ok button and trigger a click event
+        $('#commonModal .btn-primary').click();
+    });
+});
 
 //--------------------مؤلف----------------------------//
 
