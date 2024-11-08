@@ -458,7 +458,7 @@ const RabatWPremiumButton = createButton("Rabat Work Premium", function() {
                 if (isVisibleSubVisa && isOkButtonClicked) {
                     console.log("VisaSubType " + i + " is visible");
                     var VisaSubType = $("#VisaSubType" + i).data("kendoDropDownList");
-                    VisaSubType.select(28); // 28 corresponds to 'Work'
+                    VisaSubType.select(29); // 29 corresponds to 'Work'
                     VisaSubType.trigger("change");
 
                     await new Promise(resolve => setTimeout(resolve, 100)); // Ajouter un délai de 100 ms
@@ -630,7 +630,7 @@ const RabatWPremiumButton = createButton("Rabat Work Premium", function() {
                 if (isVisibleSubVisa && isOkButtonClicked) {
                     console.log("VisaSubType " + i + " is visible");
                     var VisaSubType = $("#VisaSubType" + i).data("kendoDropDownList");
-                    VisaSubType.select(28); // 28 corresponds to 'Work'
+                    VisaSubType.select(29); // 29 corresponds to 'Work'
                     VisaSubType.trigger("change");
 
                     await new Promise(resolve => setTimeout(resolve, 100)); // Ajouter un délai de 100 ms
