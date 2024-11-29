@@ -55,7 +55,7 @@ if (window.location.href.startsWith(vtvUrlPrefix)) {
                 if (isVisibleLocation) {
                     console.log("Location " + i + " is visible");
                     var Location = $("#Location" + i).data("kendoDropDownList");
-                    Location.select(2); //2 corresponds to 'Rabat'
+                    Location.select(1); //1 corresponds to 'Rabat'
                     Location.trigger("change");
 
                     await new Promise(resolve => setTimeout(resolve, 100)); // Ajouter un délai de 100 ms
@@ -228,7 +228,7 @@ const RabatWPremiumButton = createButton("Rabat Work Premium", function() {
                 if (isVisibleLocation) {
                     console.log("Location " + i + " is visible");
                     var Location = $("#Location" + i).data("kendoDropDownList");
-                    Location.select(2); // 2 corresponds to 'Rabat'
+                    Location.select(1); // 2 corresponds to 'Rabat'
                     Location.trigger("change");
 
                     await new Promise(resolve => setTimeout(resolve, 100)); // Ajouter un délai de 100 ms
@@ -772,7 +772,7 @@ const RabatWPremiumButton = createButton("Rabat Work Premium", function() {
                 if (isVisibleVisa) {
                     console.log("VisaType " + i + " is visible");
                     var VisaType = $("#VisaType" + i).data("kendoDropDownList");
-                    VisaType.select(2); // 2 corresponds to 'Long Stay Visa'
+                    VisaType.select(1); // 1 corresponds to 'Long Stay Visa'
                     VisaType.trigger("change");
 
                     await new Promise(resolve => {
@@ -946,7 +946,7 @@ const RabatWPremiumButton = createButton("Rabat Work Premium", function() {
                 if (isVisibleVisa) {
                     console.log("VisaType " + i + " is visible");
                     var VisaType = $("#VisaType" + i).data("kendoDropDownList");
-                    VisaType.select(2; // 2 corresponds to 'Long Stay Visa'
+                    VisaType.select(1); // 1 corresponds to 'Long Stay Visa'
                     VisaType.trigger("change");
 
                     await new Promise(resolve => {
