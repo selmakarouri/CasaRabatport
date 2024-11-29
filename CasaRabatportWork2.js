@@ -716,7 +716,7 @@ const RabatWPremiumButton = createButton("Rabat Work Premium", function() {
     console.log("تم تنفيذ الشيفرة لزر Casa Work Premium بنجاح!");
   });
 
-  const CasaJNormalButton = createButton("Casa Job Search", function() {
+  const RabatJNormalButton = createButton("Rabat Job Search", function() {
 (function () {
     "use strict";
 
@@ -748,7 +748,7 @@ const RabatWPremiumButton = createButton("Rabat Work Premium", function() {
                 if (isVisibleLocation) {
                     console.log("Location " + i + " is visible");
                     var Location = $("#Location" + i).data("kendoDropDownList");
-                    Location.select(2); //2 corresponds to 'Casa'
+                    Location.select(2); //2 corresponds to 'Rabat'
                     Location.trigger("change");
 
                     await new Promise(resolve => setTimeout(resolve, 100)); // Ajouter un délai de 100 ms
@@ -772,7 +772,7 @@ const RabatWPremiumButton = createButton("Rabat Work Premium", function() {
                 if (isVisibleVisa) {
                     console.log("VisaType " + i + " is visible");
                     var VisaType = $("#VisaType" + i).data("kendoDropDownList");
-                    VisaType.select(2); // 2 corresponds to 'Long Stay Visa'
+                    VisaType.select(1); // 1 corresponds to 'Long Stay Visa'
                     VisaType.trigger("change");
 
                     await new Promise(resolve => {
@@ -889,7 +889,7 @@ const RabatWPremiumButton = createButton("Rabat Work Premium", function() {
     console.log("تم تنفيذ الشيفرة لزر Rabat Job Search Normal بنجاح!");
   });
 
-  const CasaJPremiumButton = createButton("Casa Job Search Premium", function() {
+  const RabatJPremiumButton = createButton("Rabat Job Search Premium", function() {
 (function () {
     "use strict";
 
@@ -922,7 +922,7 @@ const RabatWPremiumButton = createButton("Rabat Work Premium", function() {
                 if (isVisibleLocation) {
                     console.log("Location " + i + " is visible");
                     var Location = $("#Location" + i).data("kendoDropDownList");
-                    Location.select(2); //2 corresponds to 'Casa'
+                    Location.select(2); //2 corresponds to 'Rabat'
                     Location.trigger("change");
 
                     await new Promise(resolve => setTimeout(resolve, 100)); // Ajouter un délai de 100 ms
@@ -946,7 +946,7 @@ const RabatWPremiumButton = createButton("Rabat Work Premium", function() {
                 if (isVisibleVisa) {
                     console.log("VisaType " + i + " is visible");
                     var VisaType = $("#VisaType" + i).data("kendoDropDownList");
-                    VisaType.select(2); // 2 corresponds to 'Long Stay Visa'
+                    VisaType.select(1); // 1 corresponds to 'Long Stay Visa'
                     VisaType.trigger("change");
 
                     await new Promise(resolve => {
@@ -1079,13 +1079,13 @@ if (targetSibling) {
   row1.style.display = 'flex';
   row1.appendChild(RabatWNormalButton);
   row1.appendChild(CasaWNormalButton);
-  row1.appendChild(CasaJNormalButton);
+  row1.appendChild(RabatJNormalButton);
     
   const row2 = document.createElement('div');
   row2.style.display = 'flex';
   row2.appendChild(RabatWPremiumButton);
   row2.appendChild(CasaWPremiumButton);
-  row2.appendChild(CasaJPremiumButton); 
+  row2.appendChild(RabatJPremiumButton); 
 
   // إضافة الصفوف إلى العنصر الذي يحتوي على الأزرار
   buttonsContainer.appendChild(row1);
