@@ -772,7 +772,7 @@ const RabatWPremiumButton = createButton("Rabat Work Premium", function() {
                 if (isVisibleVisa) {
                     console.log("VisaType " + i + " is visible");
                     var VisaType = $("#VisaType" + i).data("kendoDropDownList");
-                    VisaType.select(1); // 1 corresponds to 'Long Stay Visa'
+                    VisaType.select(2); // 2 corresponds to 'Long Stay Visa'
                     VisaType.trigger("change");
 
                     await new Promise(resolve => {
@@ -946,7 +946,7 @@ const RabatWPremiumButton = createButton("Rabat Work Premium", function() {
                 if (isVisibleVisa) {
                     console.log("VisaType " + i + " is visible");
                     var VisaType = $("#VisaType" + i).data("kendoDropDownList");
-                    VisaType.select(1); // 1 corresponds to 'Long Stay Visa'
+                    VisaType.select(2); // 2 corresponds to 'Long Stay Visa'
                     VisaType.trigger("change");
 
                     await new Promise(resolve => {
